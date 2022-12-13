@@ -22,23 +22,21 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="text-lg font-pubSans bg-neutral-Very-Light-Gray">
-    <header class=" bg-neutral-White py-5">
+    <header class="bg-neutral-White py-5">
       <nav class="flex justify-between items-center container">
         <div aria-label="Logo">
           <a href="#"><img src="./images/logo.svg" alt="logo"></a>
         </div>
-        <div class="hidden lg:flex justify-between">
-          <ul class="flex gap-8">
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm" href="#">Home</a></li>
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm" href="#">About</a></li>
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm" href="#">Contact</a></li>
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm" href="#">Blog</a></li>
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm" href="#">Careers</a></li>
+        <div class="hidden lg:block">
+          <ul class="flex gap-8 items-center">
+            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">Home</a></li>
+            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">About</a></li>
+            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">Contact</a></li>
+            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">Blog</a></li>
+            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">Careers</a></li>
           </ul>
         </div>
-        <div class="hidden lg:flex border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan">
-          <button class="text-sm text-neutral-White">Request Invite</button>
-        </div>
+        <button class="text-sm text-neutral-White font-semibold hidden lg:flex border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan transition-opacity duration-300 ease-in-out hover:opacity-75">Request Invite</button>
         <div class="lg:hidden cursor-pointer block">
           <span class="block w-6 h-0.5 my-1 mx-auto bg-neutral-Grayish-Blue"></span>
           <span class="block w-6 h-0.5 my-1 mx-auto bg-neutral-Grayish-Blue"></span>
