@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="text-lg font-pubSans bg-neutral-Very-Light-Gray">
-    <header class="bg-neutral-White py-5">
+    <header id="headerOverlay" class="bg-neutral-White py-5 shadow-md fixed top-0 right-0 left-0">
+      <div id="overlay" class="invisible opacity-0 fixed top-60px lg:top-78px left-0 right-0 bottom-0 bg-overlayBg py-5"></div>
       <nav class="flex justify-between items-center container">
         <div aria-label="Logo">
           <a href="#"><img src="./images/logo.svg" alt="logo"></a>
@@ -37,12 +38,16 @@
           </ul>
         </div>
         <button class="text-sm text-neutral-White font-semibold hidden lg:flex border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan transition-opacity duration-300 ease-in-out hover:opacity-75">Request Invite</button>
-        <div class="lg:hidden cursor-pointer block">
-          <span class="block w-6 h-0.5 my-1 mx-auto bg-neutral-Grayish-Blue"></span>
-          <span class="block w-6 h-0.5 my-1 mx-auto bg-neutral-Grayish-Blue"></span>
-          <span class="block w-6 h-0.5 my-1 mx-auto bg-neutral-Grayish-Blue"></span>
+        <div id="btnHamburger" class="lg:hidden cursor-pointer block">
+          <span class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-top-left"></span>
+          <span class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded"></span>
+          <span class="block w-6 h-0.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-bottom-left"></span>
         </div>
       </nav>
     </header>
+    <main>
+
+    </main>
+    <script async src="../src/js/main.js"></script>
   </body>
 </html>

@@ -34,6 +34,53 @@ module.exports = {
           "2xl": "1124px",
         },
       },
+      backgroundImage: {
+        'overlayBg' : 'linear-gradient(hsl(233, 8%, 62%), transparent)',
+      },
+      spacing: {
+        '78px' : '4.875rem',
+        '60px' : '3.75rem'
+      },
+      keyframes: {
+        'fade-in': {
+          from: {
+            'visibility': 'hidden',
+            'opacity': '0'
+          },
+          '1%': {
+            'visibility': 'visible',
+            'opacity': '0',
+          },
+          
+          to: {
+            'opacity': '1',
+            'visibility': 'visible',
+          }
+        }
+      },
+      animation: {
+        
+        'fade-in': 'fade-in 3s ease-in-out forwards'
+      },
+      keyframes: {
+        'fade-out': {
+          from: {
+            'visibility': 'visible',
+            'opacity': '1'
+          },
+          '99%': {
+            'visibility': 'visible',
+            'opacity': '0',
+          },
+          to: {
+            'visibility': 'hidden',
+            'opacity': '0'
+          }
+        }
+      },
+      animation: {
+        'fade-out': 'fade-out 3s ease-in-out forwards'
+      }
     },
   },
   plugins: [],

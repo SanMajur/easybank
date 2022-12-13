@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .open span:first-child {
+        @apply rotate-45 
+    }
+    .open span:nth-child(2) {
+        @apply opacity-0
+    }
+    .open span:last-child {
+        @apply -rotate-45 
+    }
+    .open div:first-child {
+        @apply block opacity-100 visible
+    }
+    .fade-in {
+        @apply fade-in 3s ease-in-out forwards block
+    }
+    .fade-out {
+        @apply fade-out 3s ease-in-out forwards hidden
+    }
+}
