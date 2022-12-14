@@ -15,8 +15,25 @@
     .open div:first-child {
         @apply block opacity-100 visible
     }
+}
+@layer utilities {
+    @keyframes fade-in {
+        from {
+            visibility: hidden;
+            opacity: 0;
+        }
+        1% {
+            visibility: visible;
+            opacity: 0;
+        }
+        to {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
     .fade-in {
-        @apply animate-fade-in
+        animation: fade-in 300ms ease-in-out forwards;
     }
     .fade-out {
         @apply animate-fade-out
