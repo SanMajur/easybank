@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.html"],
+  content: ["./public/**/*.html", "./src/**/*.js"],
   theme: {
     extend: {
       fontFamily: {
@@ -59,8 +59,7 @@ module.exports = {
         }
       },
       animation: {
-        
-        'fade-in': 'fade-in 3s ease-in-out forwards'
+        'fade-in': 'fade-in 300ms ease-in-out forwards'
       },
       keyframes: {
         'fade-out': {
@@ -79,7 +78,7 @@ module.exports = {
         }
       },
       animation: {
-        'fade-out': 'fade-out 3s ease-in-out forwards'
+        'fade-out': 'fade-out 300ms ease-in-out forwards'
       }
     },
   },

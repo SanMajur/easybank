@@ -16,9 +16,9 @@
         @apply block opacity-100 visible
     }
     .fade-in {
-        @apply fade-in 3s ease-in-out forwards block
+        @apply fade-in 300ms ease-in-out forwards block
     }
     .fade-out {
-        @apply fade-out 3s ease-in-out forwards hidden
+        @apply fade-out 300ms ease-in-out forwards hidden
     }
 }
