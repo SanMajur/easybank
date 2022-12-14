@@ -45,7 +45,7 @@ module.exports = {
         'fade-in': {
           from: {
             'visibility': 'hidden',
-            'opacity': '0'
+            'opacity': '0',
           },
           '1%': {
             'visibility': 'visible',
@@ -55,17 +55,17 @@ module.exports = {
           to: {
             'opacity': '1',
             'visibility': 'visible',
-          }
-        }
+          },
+        },
       },
       animation: {
-        'fade-in': 'fade-in 300ms ease-in-out forwards'
+        'fade-in': 'fade-in 300ms ease-in-out forwards',
       },
       keyframes: {
         'fade-out': {
           from: {
             'visibility': 'visible',
-            'opacity': '1'
+            'opacity': '1',
           },
           '99%': {
             'visibility': 'visible',
