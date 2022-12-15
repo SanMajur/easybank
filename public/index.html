@@ -21,55 +21,137 @@
     <!-- Link to stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body id="body" class="text-lg font-pubSans bg-neutral-Very-Light-Gray">
-    <header id="headerOverlay" class="bg-neutral-White shadow-md fixed top-0 right-0 left-0 z-50">
-      <div id="overlay" class="invisible opacity-0 fixed top-60px left-0 right-0 bottom-0 bg-overlayBg py-5 "></div>
-      <nav class="flex justify-between items-center container py-5">
+  <body id="body" class="font-pubSans bg-neutral-Very-Light-Gray">
+    <header
+      id="headerOverlay"
+      class="bg-neutral-White shadow-md fixed top-0 right-0 left-0 z-50 py-5"
+    >
+      <div
+        id="overlay"
+        class="invisible opacity-0 fixed top-60px left-0 right-0 bottom-0 bg-overlayBg"
+      ></div>
+      <nav class="flex justify-between items-center container">
+        <!-- Logo -->
         <div aria-label="Logo">
-          <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+          <a href="./index.html"
+            ><img src="./images/logo.svg" alt="Easybank logo"
+          /></a>
         </div>
+        <!-- Desktop Links -->
         <div class="hidden lg:block">
           <ul class="flex gap-8 items-center">
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">Home</a></li>
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">About</a></li>
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">Contact</a></li>
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">Blog</a></li>
-            <li><a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100" href="#">Careers</a></li>
+            <li>
+              <a
+                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+                href="#"
+                >Careers</a
+              >
+            </li>
           </ul>
         </div>
-        <button class="text-sm text-neutral-White font-semibold hidden lg:flex border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan transition-opacity duration-300 ease-in-out hover:opacity-75">Request Invite</button>
+        <!-- CTA button -->
+        <button
+          class="text-sm text-neutral-White font-semibold hidden lg:flex border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan transition-opacity duration-300 ease-in-out hover:opacity-75"
+        >
+          Request Invite
+        </button>
+        <!-- Hamburger menu -->
         <div id="btnHamburger" class="lg:hidden cursor-pointer block">
-          <span class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-top-left"></span>
-          <span class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded"></span>
-          <span class="block w-6 h-0.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-bottom-left"></span>
+          <span
+            class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-top-left"
+          ></span>
+          <span
+            class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded"
+          ></span>
+          <span
+            class="block w-6 h-0.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-bottom-left"
+          ></span>
         </div>
       </nav>
-      <div id="mobileMenu" class="  container invisible bg-neutral-White py-3 rounded-md absolute top-20 left-1/2 -translate-x-1/2 w-11/12">
-        <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">Home</a>
-        <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">About</a>
-        <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">Contact</a>
-        <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">Blog</a>
-        <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">Careers</a>
+      <!-- Mobile links -->
+      <div
+        id="mobileMenu"
+        class="container invisible bg-neutral-White py-3 rounded-md absolute top-20 left-1/2 -translate-x-1/2 w-11/12"
+      >
+        <a
+          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
+          href="#"
+          >Home</a
+        >
+        <a
+          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
+          href="#"
+          >About</a
+        >
+        <a
+          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
+          href="#"
+          >Contact</a
+        >
+        <a
+          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
+          href="#"
+          >Blog</a
+        >
+        <a
+          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
+          href="#"
+          >Careers</a
+        >
       </div>
     </header>
     <main class="mt-14 lg:mt-20">
       <section id="hero" class="">
-        <div class="flex flex-col md:flex-row">
-           <div class="order-1 md:order-2  bg-heroMobileBg bg-no-repeat bg-center bg-cover min-h-280px relative md:w-full">
-           <!-- before:content-[''] before:bg-phoneBg before:bg-no-repeat before:bg-center-bottom before:bg-cover before:absolute before:w-full before:h-full before:z-40 "> -->
-            <img class="container absolute -bottom-1 lg:static md:-bottom-8" src="./images/image-mockups.png" alt="">
-          </div>
-          <div class="order-2 md:order-1 container">
-            <h1 class="text-primary-Dark-Blue text-4xl font-medium text-center py-4">Next generation digital banking</h1>
-            <p class="text-neutral-Grayish-Blue text-center text-sm py-2"> Take your financial life online. Your Easybank account will be a one-stop-shop 
-              for spending, saving, budgeting, investing, and much more.</p>
-              <div class="text-center py-4">
-                <button class="text-sm text-neutral-White font-semibold border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan transition-opacity duration-300 ease-in-out hover:opacity-75">Request Invite</button>
-              </div>
+        <div
+          class="order-1 md:order-2 bg-heroMobileBg bg-no-repeat bg-center bg-cover min-h-280px relative before:content-[''] before:absolute before:bg-heroPhonesBg before:h-full before:w-full before:bg-cover before:bg-no-repeat before:bg-center-bottom before:container"
+        >
+          <!-- <img class="absolute h-full" src="./images/image-mockups.png" alt="">  -->
+        </div>
+        <div class="order-2 md:order-1 container text-center">
+          <h1 class="text-primary-Dark-Blue text-4xl font-medium py-4">
+            Next generation digital banking
+          </h1>
+          <p class="text-neutral-Grayish-Blue text-sm p-2">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <div class="text-center py-4">
+            <button
+              class="text-sm text-neutral-White font-semibold border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan transition-opacity duration-300 ease-in-out hover:opacity-75"
+            >
+              Request Invite
+            </button>
           </div>
         </div>
-         
-      
       </section>
     </main>
     <script async src="../src/js/main.js"></script>

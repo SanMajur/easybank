@@ -38,10 +38,13 @@ module.exports = {
         'overlayBg' : 'linear-gradient(hsl(233, 8%, 62%), transparent)',
         'heroMobileBg': "url('/public/images/bg-intro-mobile.svg')",
         'heroDesktopBg': "url('/public/images/bg-intro-desktop.svg')",
-        'phoneBg': "url('/public/images/image-mockups.png')"
+        'heroPhonesBg': "url('/public/images/image-mockups.png')",
       },
       backgroundPosition: {
         'center-bottom': 'center bottom',
+      },
+      backgroundSize: {
+        '93%': '93%',
       },
       spacing: {
         '78px' : '4.875rem',
@@ -67,7 +70,7 @@ module.exports = {
         'fade-out': 'fade-out 300ms ease-in-out forwards'
       },
       minHeight: {
-        '280px': '19rem'
+        '280px': '17.5rem'
       }
     },
   },
