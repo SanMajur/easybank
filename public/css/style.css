@@ -636,12 +636,6 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 .bg-heroMobileBg {
-  background-image: url('./public/images/bg-intro-mobile.svg');
-}
-.bg-\[url\(\'\.\/images\/bg-intro-mobile\.svg\'\)\] {
-  background-image: url('./images/bg-intro-mobile.svg');
-}
-.bg-\[url\(\'\/public\/images\/bg-intro-mobile\.svg\'\)\] {
   background-image: url('/public/images/bg-intro-mobile.svg');
 }
 .from-primary-Lime-Green {
@@ -851,14 +845,6 @@ video {
 }
 .before\:bg-heroPhonesBg::before {
   content: var(--tw-content);
-  background-image: url('./public/images/image-mockups.png');
-}
-.before\:bg-\[url\(\'\.\/images\/image-mockups\.png\'\)\]::before {
-  content: var(--tw-content);
-  background-image: url('./images/image-mockups.png');
-}
-.before\:bg-\[url\(\'\/public\/images\/image-mockups\.png\'\)\]::before {
-  content: var(--tw-content);
   background-image: url('/public/images/image-mockups.png');
 }
 .before\:bg-cover::before {
@@ -901,6 +887,14 @@ video {
   .md\:order-1 {
     order: 1;
   }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
+  }
 }
 @media (min-width: 1024px) {
 
@@ -918,9 +912,5 @@ video {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:flex-1 {
-    flex: 1 1 0%;
   }
 }
