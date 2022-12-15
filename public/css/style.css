@@ -572,7 +572,7 @@ video {
   height: 0px;
 }
 .min-h-280px {
-  min-height: 17.5rem;
+  min-height: 19rem;
 }
 .w-6 {
   width: 1.5rem;
@@ -604,9 +604,6 @@ video {
 }
 .justify-between {
   justify-content: space-between;
-}
-.justify-around {
-  justify-content: space-around;
 }
 .gap-8 {
   gap: 2rem;
@@ -859,14 +856,6 @@ video {
 }
 @media (min-width: 1024px) {
 
-  .lg\:-top-10 {
-    top: -2.5rem;
-  }
-
-  .lg\:left-20 {
-    left: 5rem;
-  }
-
   .lg\:-top-28 {
     top: -7rem;
   }
@@ -919,15 +908,6 @@ video {
     width: 40rem;
   }
 
-  .lg\:min-w-fit {
-    min-width: -moz-fit-content;
-    min-width: fit-content;
-  }
-
-  .lg\:max-w-lg {
-    max-width: 32rem;
-  }
-
   .lg\:max-w-xl {
     max-width: 36rem;
   }
@@ -938,10 +918,6 @@ video {
 
   .lg\:bg-heroDesktopBg {
     background-image: url('/public/images/bg-intro-desktop.svg');
-  }
-
-  .lg\:bg-auto {
-    background-size: auto;
   }
 
   .lg\:bg-left-center {

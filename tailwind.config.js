@@ -71,7 +71,7 @@ module.exports = {
         'fade-out': 'fade-out 300ms ease-in-out forwards'
       },
       minHeight: {
-        '280px': '17.5rem',
+        '280px': '19rem',
         '41rem': '38rem',
       },
       width: {
