@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body id="body" class="text-lg font-pubSans bg-neutral-Very-Light-Gray">
-    <header id="headerOverlay" class="bg-neutral-White shadow-md fixed top-0 right-0 left-0">
+    <header id="headerOverlay" class="bg-neutral-White shadow-md fixed top-0 right-0 left-0 z-50">
       <div id="overlay" class="invisible opacity-0 fixed top-60px left-0 right-0 bottom-0 bg-overlayBg py-5 "></div>
       <nav class="flex justify-between items-center container py-5">
         <div aria-label="Logo">
@@ -52,8 +52,25 @@
         <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">Careers</a>
       </div>
     </header>
-    <main>
-   
+    <main class="mt-14 lg:mt-20">
+      <section id="hero" class="">
+        <div class="flex flex-col md:flex-row">
+           <div class="order-1 md:order-2  bg-heroMobileBg bg-no-repeat bg-center bg-cover min-h-280px relative md:w-full">
+           <!-- before:content-[''] before:bg-phoneBg before:bg-no-repeat before:bg-center-bottom before:bg-cover before:absolute before:w-full before:h-full before:z-40 "> -->
+            <img class="container absolute -bottom-1 lg:static md:-bottom-8" src="./images/image-mockups.png" alt="">
+          </div>
+          <div class="order-2 md:order-1 container">
+            <h1 class="text-primary-Dark-Blue text-4xl font-medium text-center py-4">Next generation digital banking</h1>
+            <p class="text-neutral-Grayish-Blue text-center text-sm py-2"> Take your financial life online. Your Easybank account will be a one-stop-shop 
+              for spending, saving, budgeting, investing, and much more.</p>
+              <div class="text-center py-4">
+                <button class="text-sm text-neutral-White font-semibold border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan transition-opacity duration-300 ease-in-out hover:opacity-75">Request Invite</button>
+              </div>
+          </div>
+        </div>
+         
+      
+      </section>
     </main>
     <script async src="../src/js/main.js"></script>
   </body>

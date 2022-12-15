@@ -36,30 +36,16 @@ module.exports = {
       },
       backgroundImage: {
         'overlayBg' : 'linear-gradient(hsl(233, 8%, 62%), transparent)',
+        'heroMobileBg': "url('/public/images/bg-intro-mobile.svg')",
+        'heroDesktopBg': "url('/public/images/bg-intro-desktop.svg')",
+        'phoneBg': "url('/public/images/image-mockups.png')"
+      },
+      backgroundPosition: {
+        'center-bottom': 'center bottom',
       },
       spacing: {
         '78px' : '4.875rem',
         '60px' : '3.75rem'
-      },
-      keyframes: {
-        'fade-in': {
-          from: {
-            'visibility': 'hidden',
-            'opacity': '0',
-          },
-          '1%': {
-            'visibility': 'visible',
-            'opacity': '0',
-          },
-          
-          to: {
-            'opacity': '1',
-            'visibility': 'visible',
-          },
-        },
-      },
-      animation: {
-        'fade-in': 'fade-in 300ms ease-in-out forwards',
       },
       keyframes: {
         'fade-out': {
@@ -79,6 +65,9 @@ module.exports = {
       },
       animation: {
         'fade-out': 'fade-out 300ms ease-in-out forwards'
+      },
+      minHeight: {
+        '280px': '19rem'
       }
     },
   },
