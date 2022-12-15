@@ -535,14 +535,14 @@ video {
 .left-1\/2 {
   left: 50%;
 }
+.-bottom-2\.5 {
+  bottom: -0.625rem;
+}
+.-bottom-2 {
+  bottom: -0.5rem;
+}
 .z-50 {
   z-index: 50;
-}
-.order-1 {
-  order: 1;
-}
-.order-2 {
-  order: 2;
 }
 .mb-1\.5 {
   margin-bottom: 0.375rem;
@@ -552,6 +552,9 @@ video {
 }
 .mt-14 {
   margin-top: 3.5rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
 }
 .block {
   display: block;
@@ -568,9 +571,6 @@ video {
 .h-0 {
   height: 0px;
 }
-.h-full {
-  height: 100%;
-}
 .min-h-280px {
   min-height: 17.5rem;
 }
@@ -579,6 +579,12 @@ video {
 }
 .w-11\/12 {
   width: 91.666667%;
+}
+.w-full {
+  width: 100%;
+}
+.flex-1 {
+  flex: 1 1 0%;
 }
 .origin-top-left {
   transform-origin: top left;
@@ -598,6 +604,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
 }
 .gap-8 {
   gap: 2rem;
@@ -686,6 +695,14 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .text-center {
   text-align: center;
 }
@@ -709,6 +726,9 @@ video {
 }
 .font-semibold {
   font-weight: 600;
+}
+.leading-6 {
+  line-height: 1.5rem;
 }
 .text-neutral-Grayish-Blue {
   --tw-text-opacity: 1;
@@ -790,23 +810,6 @@ video {
 .fade-out {
   animation: fade-out 300ms ease-in-out forwards;
 }
-.before\:container::before {
-  content: var(--tw-content);
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-}
-@media (min-width: 1124px) {
-
-  .before\:container::before {
-    content: var(--tw-content);
-    max-width: 1124px;
-    padding-right: 4rem;
-    padding-left: 4rem;
-  }
-}
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -831,33 +834,9 @@ video {
   content: var(--tw-content);
   height: 0.25rem;
 }
-.before\:h-full::before {
-  content: var(--tw-content);
-  height: 100%;
-}
-.before\:w-full::before {
-  content: var(--tw-content);
-  width: 100%;
-}
 .before\:bg-gradient-to-r::before {
   content: var(--tw-content);
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-.before\:bg-heroPhonesBg::before {
-  content: var(--tw-content);
-  background-image: url('/public/images/image-mockups.png');
-}
-.before\:bg-cover::before {
-  content: var(--tw-content);
-  background-size: cover;
-}
-.before\:bg-center-bottom::before {
-  content: var(--tw-content);
-  background-position: center bottom;
-}
-.before\:bg-no-repeat::before {
-  content: var(--tw-content);
-  background-repeat: no-repeat;
 }
 .before\:opacity-0::before {
   content: var(--tw-content);
@@ -878,28 +857,46 @@ video {
   content: var(--tw-content);
   opacity: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
-  .md\:order-2 {
+  .lg\:-top-10 {
+    top: -2.5rem;
+  }
+
+  .lg\:left-20 {
+    left: 5rem;
+  }
+
+  .lg\:-top-28 {
+    top: -7rem;
+  }
+
+  .lg\:left-28 {
+    left: 7rem;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
+  }
+
+  .lg\:right-8 {
+    right: 2rem;
+  }
+
+  .lg\:order-2 {
     order: 2;
   }
 
-  .md\:order-1 {
+  .lg\:order-1 {
     order: 1;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:flex-1 {
-    flex: 1 1 0%;
-  }
-}
-@media (min-width: 1024px) {
-
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
@@ -912,5 +909,56 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:min-h-41rem {
+    min-height: 38rem;
+  }
+
+  .lg\:w-40rem {
+    width: 40rem;
+  }
+
+  .lg\:min-w-fit {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+
+  .lg\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .lg\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .lg\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .lg\:bg-heroDesktopBg {
+    background-image: url('/public/images/bg-intro-desktop.svg');
+  }
+
+  .lg\:bg-auto {
+    background-size: auto;
+  }
+
+  .lg\:bg-left-center {
+    background-position: left center;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

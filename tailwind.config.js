@@ -42,6 +42,7 @@ module.exports = {
       },
       backgroundPosition: {
         'center-bottom': 'center bottom',
+        'left-center': 'left center',
       },
       backgroundSize: {
         '93%': '93%',
@@ -70,8 +71,12 @@ module.exports = {
         'fade-out': 'fade-out 300ms ease-in-out forwards'
       },
       minHeight: {
-        '280px': '17.5rem'
-      }
+        '280px': '17.5rem',
+        '41rem': '38rem',
+      },
+      width: {
+        '40rem': '40rem',
+      },
     },
   },
   plugins: [],
