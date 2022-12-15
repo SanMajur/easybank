@@ -36,9 +36,9 @@ module.exports = {
       },
       backgroundImage: {
         'overlayBg' : 'linear-gradient(hsl(233, 8%, 62%), transparent)',
-        'heroMobileBg': "url('/public/images/bg-intro-mobile.svg')",
-        'heroDesktopBg': "url('/public/images/bg-intro-desktop.svg')",
-        'heroPhonesBg': "url('/public/images/image-mockups.png')",
+        'heroMobileBg': "url('./public/images/bg-intro-mobile.svg')",
+        'heroDesktopBg': "url('./public/images/bg-intro-desktop.svg')",
+        'heroPhonesBg': "url('./public/images/image-mockups.png')",
       },
       backgroundPosition: {
         'center-bottom': 'center bottom',
