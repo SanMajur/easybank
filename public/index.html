@@ -1,134 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <title>Frontend Mentor | Easybank landing page</title>
-    <!-- Google fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Link to stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body id="body" class="font-pubSans bg-neutral-Very-Light-Gray overflow-x-hidden">
-    <header
-      id="headerOverlay"
-      class="bg-neutral-White shadow-md fixed top-0 right-0 left-0 z-50 py-5"
-    >
-      <div
-        id="overlay"
-        class="invisible opacity-0 fixed top-60px left-0 right-0 bottom-0 bg-overlayBg"
-      ></div>
-      <nav class="flex justify-between items-center container">
-        <!-- Logo -->
-        <div aria-label="Logo">
-          <a href="./index.html"
-            ><img src="./images/logo.svg" alt="Easybank logo"
-          /></a>
-        </div>
-        <!-- Desktop Links -->
-        <div class="hidden lg:block">
-          <ul class="flex gap-8 items-center">
-            <li>
-              <a
-                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
-                href="#"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
-                href="#"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
-                href="#"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
-                href="#"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
-                href="#"
-                >Careers</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- CTA button -->
-        <button
-          class="text-sm text-neutral-White font-semibold hidden lg:flex border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan transition-opacity duration-300 ease-in-out hover:opacity-75"
-        >
-          Request Invite
-        </button>
-        <!-- Hamburger menu -->
-        <div id="btnHamburger" class="lg:hidden cursor-pointer block">
-          <span
-            class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-top-left"
-          ></span>
-          <span
-            class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded"
-          ></span>
-          <span
-            class="block w-6 h-0.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-bottom-left"
-          ></span>
-        </div>
-      </nav>
-      <!-- Mobile links -->
-      <div
-        id="mobileMenu"
-        class="container invisible bg-neutral-White py-3 rounded-md absolute top-20 left-1/2 -translate-x-1/2 w-11/12"
-      >
-        <a
-          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
-          href="#"
-          >Home</a
-        >
-        <a
-          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
-          href="#"
-          >About</a
-        >
-        <a
-          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
-          href="#"
-          >Contact</a
-        >
-        <a
-          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
-          href="#"
-          >Blog</a
-        >
-        <a
-          class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold"
-          href="#"
-          >Careers</a
-        >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Easybank landing page</title>
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Link to stylesheet -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body id="body" class="font-pubSans bg-neutral-Very-Light-Gray overflow-x-hidden">
+  <header id="headerOverlay" class="bg-neutral-White shadow-md fixed top-0 right-0 left-0 z-50 py-5">
+    <div id="overlay" class="invisible opacity-0 fixed top-60px left-0 right-0 bottom-0 bg-overlayBg"></div>
+    <nav class="flex justify-between items-center container">
+      <!-- Logo -->
+      <div aria-label="Logo">
+        <a href="./index.html"><img src="./images/logo.svg" alt="Easybank logo" /></a>
       </div>
-    </header>
-    
-    <script async src="../src/js/main.js"></script>
-  </body>
+      <!-- Desktop Links -->
+      <div class="hidden lg:block">
+        <ul class="flex gap-8 items-center">
+          <li>
+            <a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+              href="#">Home</a>
+          </li>
+          <li>
+            <a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+              href="#">About</a>
+          </li>
+          <li>
+            <a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+              href="#">Contact</a>
+          </li>
+          <li>
+            <a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+              href="#">Blog</a>
+          </li>
+          <li>
+            <a class="text-neutral-Grayish-Blue font-medium text-sm transition duration-300 ease-in-out hover:text-primary-Dark-Blue relative before:content-[''] before:block before:h-1 before:bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan before:left-0 before:right-0 before:-bottom-7 before:absolute before:opacity-0 hover:before:opacity-100"
+              href="#">Careers</a>
+          </li>
+        </ul>
+      </div>
+      <!-- CTA button -->
+      <button
+        class="text-sm text-neutral-White font-semibold hidden lg:flex border py-2 px-4 rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan transition-opacity duration-300 ease-in-out hover:opacity-75">
+        Request Invite
+      </button>
+      <!-- Hamburger menu -->
+      <div id="btnHamburger" class="lg:hidden cursor-pointer block">
+        <span
+          class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-top-left"></span>
+        <span
+          class="block w-6 h-0.5 mb-1.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded"></span>
+        <span
+          class="block w-6 h-0.5 bg-primary-Dark-Blue transition-all duration-300 ease-in-out rounded origin-bottom-left"></span>
+      </div>
+    </nav>
+    <!-- Mobile links -->
+    <div id="mobileMenu"
+      class="container invisible bg-neutral-White py-3 rounded-md absolute top-20 left-1/2 -translate-x-1/2 w-11/12">
+      <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">Home</a>
+      <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">About</a>
+      <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">Contact</a>
+      <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">Blog</a>
+      <a class="block text-primary-Dark-Blue text-center px-2.5 py-3 text-lg font-semibold" href="#">Careers</a>
+    </div>
+  </header>
+  <main>
+    <section class="mt-0 flex flex-col" aria-label="Hero section">
+      <div class="bg-heroMobileBg bg-cover bg-center-bottom bg-no-repeat  relative min-h-22.7rem top-14">
+        <img class="absolute -top-108px px-4" src="./images/image-mockups.png" alt="">
+      </div>
+      <div class="px-10 text-center py-10">
+        <h2 class="text-4xl text-primary-Dark-Blue pb-6">Next generation digital banking</h2>
+        <p class="text-sm py-2 text-neutral-Grayish-Blue">Take your financial life online. Your Easybank account will be a one-stop-shop 
+          for spending, saving, budgeting, investing, and much more.
+        </p>
+        <button class="mt-8 py-3 px-6 border rounded-full bg-gradient-to-r from-primary-Lime-Green to-primary-Bright-Cyan text-neutral-Light-Grayish-Blue cursor-pointer hover:opacity-75">Request Invite</button>
+      </div>
+    </section>
+  </main>
+  <script async src="../src/js/main.js"></script>
+</body>
+
 </html>

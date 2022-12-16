@@ -535,6 +535,12 @@ video {
 .left-1\/2 {
   left: 50%;
 }
+.top-14 {
+  top: 3.5rem;
+}
+.-top-108px {
+  top: -7.5rem;
+}
 .z-50 {
   z-index: 50;
 }
@@ -543,6 +549,15 @@ video {
 }
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .block {
   display: block;
@@ -558,6 +573,9 @@ video {
 }
 .h-0 {
   height: 0px;
+}
+.min-h-22\.7rem {
+  min-height: 22rem;
 }
 .w-6 {
   width: 1.5rem;
@@ -577,6 +595,9 @@ video {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.flex-col {
+  flex-direction: column;
 }
 .items-center {
   align-items: center;
@@ -623,6 +644,9 @@ video {
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
+.bg-heroMobileBg {
+  background-image: url('/public/images/bg-intro-mobile.svg');
+}
 .from-primary-Lime-Green {
   --tw-gradient-from: hsl(136, 65%, 51%);
   --tw-gradient-to: hsl(136 65% 51% / 0);
@@ -630,6 +654,15 @@ video {
 }
 .to-primary-Bright-Cyan {
   --tw-gradient-to: hsl(192, 70%, 51%);
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-center-bottom {
+  background-position: center bottom;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 .py-5 {
   padding-top: 1.25rem;
@@ -655,6 +688,33 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
 .text-center {
   text-align: center;
 }
@@ -668,6 +728,14 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .font-medium {
   font-weight: 500;
@@ -686,6 +754,10 @@ video {
 .text-primary-Dark-Blue {
   --tw-text-opacity: 1;
   color: hsl(233 26% 24% / var(--tw-text-opacity));
+}
+.text-neutral-Light-Grayish-Blue {
+  --tw-text-opacity: 1;
+  color: hsl(220 16% 96% / var(--tw-text-opacity));
 }
 .opacity-0 {
   opacity: 0;

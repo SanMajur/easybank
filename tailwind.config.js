@@ -49,7 +49,10 @@ module.exports = {
       },
       spacing: {
         '78px' : '4.875rem',
-        '60px' : '3.75rem'
+        '60px' : '3.75rem',
+        '21px': '1.3125rem',
+        '307px': '19.1875rem',
+        '108px': '7.5rem',
       },
       keyframes: {
         'fade-out': {
@@ -71,14 +74,15 @@ module.exports = {
         'fade-out': 'fade-out 300ms ease-in-out forwards'
       },
       minHeight: {
-        '280px': '19rem',
+        '22.7rem': '22rem',
         '41rem': '37rem',
       },
       width: {
         '40rem': '40rem',
       },
       maxWidth: {
-        '1124px': '70.25rem'
+        '1124px': '70.25rem',
+        '92%': '92%',
       }
     },
   },
