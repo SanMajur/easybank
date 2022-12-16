@@ -72,11 +72,14 @@ module.exports = {
       },
       minHeight: {
         '280px': '19rem',
-        '41rem': '38rem',
+        '41rem': '37rem',
       },
       width: {
         '40rem': '40rem',
       },
+      maxWidth: {
+        '1124px': '70.25rem'
+      }
     },
   },
   plugins: [],
