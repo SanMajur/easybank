@@ -52,7 +52,7 @@ module.exports = {
         '60px' : '3.75rem',
         '21px': '1.3125rem',
         '307px': '19.1875rem',
-        '108px': '7.5rem',
+        '108px': '6.625rem',
       },
       keyframes: {
         'fade-out': {
@@ -74,7 +74,7 @@ module.exports = {
         'fade-out': 'fade-out 300ms ease-in-out forwards'
       },
       minHeight: {
-        '22.7rem': '22rem',
+        '22.7rem': '21rem',
         '41rem': '37rem',
       },
       width: {
