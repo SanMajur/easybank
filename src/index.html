@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Bank Landing page</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body class="p-0 m-0 font-Alegreya text-sm text-lightGray font-light">
+    <header class="fixed top-0 left-0 right-0 bg-veryLightGray z-50" id="headerOverlay">
+        <div class="opacity-0 fixed top-16 left-0 right-0 bottom-0 bg-gradient-to-b from-gray-500 to-transparent" id="overlay"></div>
+        <nav class="py-4 flex items-center justify-between container-pall lg:container">
+            <a href="index.html">
+                <img src="/images/logo.svg" alt="" class="w-36 h-6">
+            </a>
+            <a href="#" id="btnHamburger" class="lg:hidden">
+                <span class="mb-1.5 block w-6 h-0.5 bg-gray-900 transition-all duration-300 ease-in-out origin-topRightLeft"></span>
+                <span class="mb-1.5 block w-6 h-0.5 bg-gray-900 transition-all duration-300 ease-in-out origin-topRightLeft"></span>
+                <span class=" block w-6 h-0.5 bg-gray-900 transition-all duration-300 ease-in-out origin-topRightLeft"></span>
+            </a>
+        
+            <div class="hidden lg:flex">
+                <a class="relative mr-8 text-base text-gray-500 transition-colors duration-300 ease-in-out hover:text-gray-900 before:content-[''] before:block before:absolute before:bg-gradient-to-r before:from-green-600 before:to-cyan-500 rounded-3xl before:h-1 before:left-0 before:right-0 before:-bottom-8 before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out before:hover:opacity-100" href="/">Home</a>
+                <a class="relative mr-8 text-base text-gray-500 transition-colors duration-300 ease-in-out hover:text-gray-900 before:content-[''] before:block before:absolute before:bg-gradient-to-r before:from-green-600 before:to-cyan-500 rounded-3xl before:h-1 before:left-0 before:right-0 before:-bottom-8 before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out before:hover:opacity-100" href="#">About</a>
+                <a class="relative mr-8 text-base text-gray-500 transition-colors duration-300 ease-in-out hover:text-gray-900 before:content-[''] before:block before:absolute before:bg-gradient-to-r before:from-green-600 before:to-cyan-500 rounded-3xl before:h-1 before:left-0 before:right-0 before:-bottom-8 before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out before:hover:opacity-100" href="#">Contact</a>
+                <a class="relative mr-8 text-base text-gray-500 transition-colors duration-300 ease-in-out hover:text-gray-900 before:content-[''] before:block before:absolute before:bg-gradient-to-r before:from-green-600 before:to-cyan-500 rounded-3xl before:h-1 before:left-0 before:right-0 before:-bottom-8 before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out before:hover:opacity-100" href="#">Blog</a>
+                <a class="relative mr-8 text-base text-gray-500 transition-colors duration-300 ease-in-out hover:text-gray-900 before:content-[''] before:block before:absolute before:bg-gradient-to-r before:from-green-600 before:to-cyan-500 rounded-3xl before:h-1 before:left-0 before:right-0 before:-bottom-8 before:opacity-0 before:transition-opacity before:duration-300 before:ease-in-out before:hover:opacity-100" href="#">Careers</a>
+            </div>
+            <a href="#" class="hidden lg:inline-block py-3.5 px-9 bg-gradient-to-r from-green-600 to-cyan-600 border-none rounded-3xl text-white cursor-pointer font-normal text-sm transition-opacity duration-300 ease-in-out hover:opacity-75" type="button">Request Invite</a>
+        </nav>
+        <!-- Mobile menu -->
+        <div class="container bg-veryLightGray p-7 mt-6 rounded-md absolute w-5/6 left-2/4 -translate-x-2/4 invisible" id="mobileMenu">
+            <a class="block p-2.5 text-gray-700 text-center" href="/">Home</a>
+            <a class="block p-2.5 text-gray-700 text-center" href="#">About</a>
+            <a class="block p-2.5 text-gray-700 text-center" href="#">Contact</a>
+            <a class="block p-2.5 text-gray-700 text-center" href="#">Blog</a>
+            <a class="block p-2.5 text-gray-700 text-center" href="#">Careers</a>
+          </div>
+    </header>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
