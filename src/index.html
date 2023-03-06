@@ -17,7 +17,7 @@
   </head>
   <body class="p-0 m-0 font-Alegreya text-sm text-lightGray font-light">
     <header class="fixed top-0 left-0 right-0 bg-veryLightGray z-50" id="headerOverlay">
-        <div class="opacity-0 fixed top-16 left-0 right-0 bottom-0 bg-gradient-to-b from-gray-500 to-transparent" id="overlay"></div>
+        <div class="opacity-0 fixed top-14 left-0 right-0 bottom-0 bg-gradient-to-b from-gray-500 to-transparent" id="overlay"></div>
         <nav class="py-4 flex items-center justify-between container-pall lg:container">
             <a href="index.html">
                 <img src="./images/logo.svg" alt="" class="w-36 h-6">
@@ -38,15 +38,31 @@
             <a href="#" class="hidden lg:inline-block py-3.5 px-9 bg-gradient-to-r from-green-600 to-cyan-600 border-none rounded-3xl text-white cursor-pointer font-normal text-sm transition-opacity duration-300 ease-in-out hover:opacity-75" type="button">Request Invite</a>
         </nav>
         <!-- Mobile menu -->
-        <div class="container bg-veryLightGray p-7 mt-6 rounded-md absolute w-5/6 left-2/4 -translate-x-2/4 invisible" id="mobileMenu">
+         <div class="container bg-veryLightGray p-7 mt-6 rounded-md absolute w-5/6 left-2/4 -translate-x-2/4 invisible" id="mobileMenu">
             <a class="block p-2.5 text-gray-700 text-center hover:bg-gray-400 hover:text-gray-100 hover:rounded-md text-base" href="/">Home</a>
             <a class="block p-2.5 text-gray-700 text-center hover:bg-gray-400 hover:text-gray-100 hover:rounded-md text-base" href="#">About</a>
             <a class="block p-2.5 text-gray-700 text-center hover:bg-gray-400 hover:text-gray-100 hover:rounded-md text-base" href="#">Contact</a>
             <a class="block p-2.5 text-gray-700 text-center hover:bg-gray-400 hover:text-gray-100 hover:rounded-md text-base" href="#">Blog</a>
             <a class="block p-2.5 text-gray-700 text-center hover:bg-gray-400 hover:text-gray-100 hover:rounded-md text-base" href="#">Careers</a>
-          </div>
+          </div> 
     </header>
-
-    <script src="./js/main.js"></script>
+    <main>
+      <section class="mt-14 bg-veryLightGrayish">
+        <div class="lg:container lg:flex lg:items-center">
+          <div class="bg-mobile-bg bg-cover bg-[center_-3rem] bg-no-repeat relative min-h-20rem lg:bg-desktop-bg lg:w-full lg:order-2 lg:min-h-41rem lg:container-pall">
+            <img class="absolute -top-32.5" src="./images/image-mockups.png" alt="">
+          </div>
+          <div class="container-pall text-center lg:order-1 lg:text-left">
+            <h1 class="text-4xl text-gray-900 mb-6 lg:text-6xl">Next generation digital banking</h1>
+            <p class="text-base mb-8 text-gray-600 lg:text-xl">
+              Take your financial life online. Your Easybank account will be a one-stop-shop 
+              for spending, saving, budgeting, investing, and much more.
+            </p>
+            <a href="#" class="inline-block py-3.5 px-9 bg-gradient-to-r from-green-600 to-cyan-600 border-none rounded-3xl text-white cursor-pointer font-normal text-sm transition-opacity duration-300 ease-in-out hover:opacity-75" type="button">Request Invite</a>         
+          </div>
+        </div>
+      </section>    
+    </main>
+     <script src="./js/main.js"></script> 
   </body>
 </html>
